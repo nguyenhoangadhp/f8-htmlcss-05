@@ -8,12 +8,23 @@
         <!-- Link Css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- AOS -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
+        <!-- Animate -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
 
         <!-- Link font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet"
         />
 
@@ -42,16 +53,18 @@
             <div class="container">
                 <!-- Header -->
                 <div class="header__inner">
-                    <img
-                        src="./assets/images/logo.svg"
-                        alt=""
-                        class="header__logo-link"
-                    />
-                    <img
-                        src="./assets/icon/logo-name.svg"
-                        alt=""
-                        class="header__logo-name"
-                    />
+                    <a class="header__logo">
+                        <img
+                            src="./assets/images/logo.svg"
+                            alt=""
+                            class="header__logo-link"
+                        />
+                        <img
+                            src="./assets/icon/logo-name.svg"
+                            alt=""
+                            class="header__logo-name"
+                        />
+                    </a>
                     <nav class="header-nav">
                         <ul class="header-nav__list">
                             <li class="header-nav__item">
@@ -84,7 +97,9 @@
                 <div class="hero">
                     <div class="hero__content">
                         <p class="section__title">Digital Smart Wallet</p>
-                        <h1 class="hero__heading">
+                        <h1
+                            class="hero__heading animate__animated animate__pulse"
+                        >
                             Digital
                             <strong class="hero__heading-strong"
                                 >Payment</strong
@@ -139,7 +154,182 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="guide">
+                    <!-- Guide top -->
+                    <div class="guide-top">
+                        <!-- Guide media -->
+                        <section class="guide-media-top">
+                            <div class="guide-media-top__wrap">
+                                <img
+                                    src="./assets/images/guide.png"
+                                    alt=""
+                                    class="guide-media-top__img"
+                                />
+                                <img
+                                    src="./assets/images/guide-bg-top.svg"
+                                    alt=""
+                                    class="guide-bg-top"
+                                />
+                                <img
+                                    src="./assets/images/guide-card.svg"
+                                    alt=""
+                                    class="guide-media-top__card"
+                                />
+                                <div class="guide-check-top">
+                                    <img
+                                        src="./assets/images/guide-check.svg"
+                                        alt=""
+                                        class="guide-check-top__icon"
+                                    />
+                                    <div class="guide-check-top__info">
+                                        <p class="guide-check-top__title">
+                                            Congratulations
+                                        </p>
+                                        <p class="guide-check-top__desc">
+                                            Your account activated
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="guide-top__content">
+                            <p class="section__title">Digital Smart Wallet</p>
+                            <h2 class="section__heading guide-top__heading">
+                                How It Works
+                            </h2>
+                            <h3
+                                class="section-second__heading guide-top-second__heading"
+                            >
+                                1. Open a High Interest Checking account
+                            </h3>
+                            <p
+                                class="section-second__desc guide-top__content-desc"
+                            >
+                                Fund your bank account with a minimum balance of
+                                $100. Enroll in 3 minutes or less!
+                            </p>
+                            <h3
+                                class="section-second__heading guide-top-second__heading"
+                            >
+                                2. 10 point-of-sale transactions each Month that
+                                are at least $10 each.
+                            </h3>
+                            <p
+                                class="section-second__desc guide-top__content-desc"
+                            >
+                                Be sure to use your rewards checking account as
+                                often as possible in order to accue APYI
+                            </p>
+                            <h3
+                                class="section-second__heading guide-top-second__heading"
+                            >
+                                3. Receive up to 5.50% APY
+                            </h3>
+                            <p
+                                class="section-second__desc guide-top__content-desc"
+                            >
+                                The APY you earn will be based on your account
+                                balance and satisfying the transaction
+                                requirement.
+                            </p>
+                        </section>
+                    </div>
+
+                    <!-- Guide mid -->
+                    <div class="guide-mid">
+                        <section class="guide-mid__content">
+                            <p class="section__title">Digital Smart Wallet</p>
+                            <h2 class="section__heading">
+                                One Card For All Your Payments
+                            </h2>
+                            <p class="section__desc guide-mid__desc">
+                                We bring together eveything that’s required to
+                                build websites and apps that accept payments and
+                                send payouts globally. We are the best platform.
+                            </p>
+                            <h3 class="guide-mid__second-heading">
+                                Global Payments
+                            </h3>
+                            <h3 class="guide-mid__second-heading">
+                                One-Click Purchase
+                            </h3>
+                            <h3 class="guide-mid__second-heading">
+                                Friendly Price
+                            </h3>
+                            <button class="btn guide-mid__btn">
+                                Get Started
+                            </button>
+                        </section>
+
+                        <div class="guide-mid-media">
+                            <img
+                                src="./assets/images/gui-mid-card.svg"
+                                alt=""
+                                class="guide-mid-media__card"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Guide bottom -->
+                    <div class="guide-mid guide-bottom">
+                        <section class="guide-mid__content">
+                            <p class="section__title">Digital Smart Wallet</p>
+                            <h2 class="section__heading">
+                                Transfer and Deposite Your Money Anytime
+                            </h2>
+                            <p class="section__desc guide-mid__desc">
+                                We bring together eveything that’s required to
+                                build websites and apps that accept payments and
+                                send payouts globally. We are the best platform.
+                            </p>
+                            <h3 class="guide-mid__second-heading">
+                                Powerfull App
+                            </h3>
+                            <h3 class="guide-mid__second-heading">
+                                Transparency And Speed
+                            </h3>
+                            <h3 class="guide-mid__second-heading">
+                                Multiple Use Capabilities
+                            </h3>
+                            <button class="btn guide-mid__btn">
+                                Get Started
+                            </button>
+                        </section>
+
+                        <div class="guide-media-bottom__wrap">
+                            <img
+                                src="./assets/images/guide-bottom.png"
+                                alt=""
+                                class="guide-media-bottom__img"
+                            />
+                            <img
+                                src="./assets/images/guide-bg-bottom.svg"
+                                alt=""
+                                class="guide-bg-bottom"
+                            />
+                            <img
+                                src="./assets/images/guide-dollar.svg"
+                                alt=""
+                                class="guide-media-bottom__dollar"
+                            />
+
+                            <img
+                                src="./assets/images/pay-method.svg"
+                                alt=""
+                                class="guide-pay-method"
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                animatedClassName: "animate__animated",
+            });
+        </script>
     </body>
 </html>

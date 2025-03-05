@@ -5,6 +5,7 @@
 html {
     font-size: 62.5%;
     font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 :root {
-    --desc-color: #696d76;
+    --desc-color: #696d77;
     --heading-color: #212832;
     --primary-color: #8476e3;
 }
@@ -44,6 +45,59 @@ a {
     cursor: pointer;
 }
 
+.section__title {
+    position: relative;
+    color: var(--desc-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+    padding-left: 26px;
+}
+
+.section__title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-right: 6px;
+    left: 0;
+    bottom: 12px;
+    width: 18px;
+    height: 2px;
+    background: var(--desc-color);
+}
+
+.section__heading {
+    color: var(--heading-color);
+    font-family: "Open Sans";
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.section__desc {
+    color: var(--desc-color);
+    font-family: "Open Sans";
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.section-second__desc {
+    color: var(--desc-color);
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.section-second__heading {
+    color: var(--heading-color);
+    font-family: "Open Sans";
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
 /* Header */
 .header {
     padding: 42px 0;
@@ -51,6 +105,7 @@ a {
 }
 
 .header__inner,
+.header__logo,
 .header-nav,
 .header-nav__list,
 .header__action {
@@ -113,13 +168,6 @@ a {
     margin-top: 34px;
     display: flex;
     background: #fff;
-}
-
-.hero__title {
-    color: var(--desc-color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.75;
 }
 
 .hero__heading {
@@ -213,4 +261,182 @@ a {
 .hero__media-decor-03 {
     top: 76%;
     right: -25%;
+}
+
+/* Guide */
+.guide {
+    margin-top: 190px;
+}
+
+/* Guide top */
+.guide-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.guide-media-top__wrap {
+    position: relative;
+    width: 470px;
+    height: 619px;
+    padding: 0 7px;
+}
+
+.guide-media-top__img {
+    position: relative;
+    width: 456px;
+    height: 619px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.guide-bg-top,
+.guide-media-top__card,
+.guide-check-top {
+    position: absolute;
+}
+
+.guide-bg-top {
+    bottom: 0;
+    left: 0;
+}
+
+.guide-media-top__card {
+    top: 76px;
+    right: 55px;
+}
+
+.guide-check-top {
+    width: 226px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px 15px 15px;
+    column-gap: 10px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.guide-check-top {
+    bottom: 96px;
+    right: -110px;
+    z-index: 2;
+}
+
+.guide-check-top__title {
+    color: var(--heading-color);
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.guide-check-top__desc {
+    margin-top: 4px;
+    color: var(--desc-color);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.guide-top__content {
+    width: 470px;
+}
+
+.guide-top__heading {
+    margin: 12px 0 70px 0;
+}
+
+.guide-top__content-desc {
+    margin: 16px 0 30px 0;
+}
+
+/* Guide mid */
+.guide-mid {
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.guide-mid__content {
+    width: 470px;
+}
+
+.guide-mid__desc {
+    margin: 20px 0 28px 0;
+}
+
+.guide-mid__second-heading {
+    margin-bottom: 18px;
+    padding-left: 22px;
+    color: var(--heading-color);
+    font-family: "Open Sans";
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    position: relative;
+}
+
+.guide-mid__second-heading::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+.guide-mid__btn {
+    margin-top: 20px;
+    min-width: 149px;
+    height: 58px;
+}
+
+.guide-mid__btn:hover {
+    opacity: 0.9;
+}
+
+/* Guide bottom */
+.guide-bottom {
+    flex-direction: row-reverse;
+}
+
+.guide-media-bottom__wrap {
+    display: flex;
+    justify-content: center;
+    width: 470px;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+.guide-bg-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.guide-media-bottom__img {
+    width: 413px;
+    height: 600px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.guide-media-bottom__dollar {
+    position: absolute;
+    right: -30%;
+    bottom: 28%;
+    z-index: 3;
+}
+
+.guide-pay-method {
+    position: absolute;
+    bottom: -5%;
+    right: -25%;
+    z-index: 2;
 }
