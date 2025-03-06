@@ -48,7 +48,7 @@
         />
         <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     </head>
-    <body style="height: 8000px">
+    <body>
         <header class="header">
             <div class="container">
                 <!-- Header -->
@@ -69,24 +69,26 @@
                         <ul class="header-nav__list">
                             <li class="header-nav__item">
                                 <a
-                                    href=""
+                                    href="#"
                                     class="header-nav__link header-nav__link--active"
                                 >
                                     Home
                                 </a>
                             </li>
                             <li class="header-nav__item">
-                                <a href="" class="header-nav__link">
+                                <a href="#guide-mid" class="header-nav__link">
                                     Products
                                 </a>
                             </li>
                             <li class="header-nav__item">
-                                <a href="" class="header-nav__link">
+                                <a href="#download" class="header-nav__link">
                                     Features
                                 </a>
                             </li>
                             <li class="header-nav__item">
-                                <a href="" class="header-nav__link"> Blog </a>
+                                <a href="#blog" class="header-nav__link">
+                                    Blog
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -248,7 +250,7 @@
                     </div>
 
                     <!-- Guide mid -->
-                    <div class="guide-mid">
+                    <div id="guide-mid" class="guide-mid">
                         <section class="guide-mid__content">
                             <p class="section__title">Digital Smart Wallet</p>
                             <h2 class="section__heading">
@@ -325,20 +327,15 @@
                                 class="guide-bg-bottom"
                             />
                             <img
-                                data-aos-anchor-placement="center-bottom"
-                                data-aos="zoom-out"
                                 data-aos-easing="linear"
                                 data-aos-duration="1000"
+                                data-aos="fade-down"
                                 src="./assets/images/guide-dollar.svg"
                                 alt=""
                                 class="guide-media-bottom__dollar"
                             />
 
                             <img
-                                data-aos-anchor-placement="center-bottom"
-                                data-aos="zoom-out"
-                                data-aos-easing="linear"
-                                data-aos-duration="1000"
                                 src="./assets/images/pay-method.svg"
                                 alt=""
                                 class="guide-pay-method"
@@ -412,7 +409,7 @@
                 </section>
 
                 <!-- Blog -->
-                <section class="blog">
+                <section id="blog" class="blog">
                     <!-- Blog top -->
                     <div class="blog-top">
                         <div class="blog-top__content">
@@ -539,7 +536,7 @@
                 </section>
 
                 <!-- Download -->
-                <div class="download">
+                <div id="download" class="download">
                     <div class="download__inner">
                         <div class="download__content">
                             <div class="section__title download__title">
@@ -594,6 +591,114 @@
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a href="#" class="header__logo">
+                        <img
+                            src="./assets/images/logo.svg"
+                            alt=""
+                            class="header__logo-link"
+                        />
+                        <img
+                            src="./assets/icon/logo-name.svg"
+                            alt=""
+                            class="header__logo-name"
+                        />
+                    </a>
+
+                    <div class="footer-row">
+                        <p class="footer__title">Sitemap</p>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link">Home</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Abouts</a
+                                >
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Growers</a
+                                >
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Merchants</a
+                                >
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-row">
+                        <p class="footer__title">Socials</p>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Facebook</a
+                                >
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Linkedin</a
+                                >
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Instagram</a
+                                >
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Twitter</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-row">
+                        <p class="footer__title">Head Office</p>
+                        <p class="section__desc footer__desc">
+                            Xilliams Corner Wine © 2017. 1112 A Market St # Ste
+                            B22, Charlottesville, CA 45565
+                        </p>
+                        <p class="footer__title">News letter</p>
+                        <div class="footer-form__wrap">
+                            <form action="" class="footer-form">
+                                <input
+                                    class="footer-form__input"
+                                    type="email"
+                                    name=""
+                                    id=""
+                                    placeholder="Email address..."
+                                />
+                            </form>
+                            <button class="btn footer-form__btn">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__contact">
+                    <a
+                        class="footer__contact-email"
+                        href="mailto:nguyenhoangad@gmail.com"
+                        >email@gmail.com</a
+                    >
+                    <a class="footer__contact-hotline" href="tel:0987654321"
+                        >(123) 456-7890</a
+                    >
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">© 2020 Ligft Media All rights reserved.</div>
+
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init({
