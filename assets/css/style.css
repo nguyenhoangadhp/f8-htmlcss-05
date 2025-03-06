@@ -65,6 +65,7 @@ a {
     position: absolute;
     margin-right: 6px;
     left: 0;
+    border-radius: 1px;
     bottom: 12px;
     width: 18px;
     height: 2px;
@@ -143,6 +144,12 @@ a {
 }
 
 .header-nav__link:hover {
+    color: var(--heading-color);
+    text-shadow: 1px 0 0 var(--heading-color);
+    text-decoration: underline;
+}
+
+.header-nav__link--active {
     color: var(--heading-color);
     text-shadow: 1px 0 0 var(--heading-color);
     text-decoration: underline;
@@ -498,6 +505,7 @@ a {
 .review__desc-wrap:hover {
     border-color: transparent;
     filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+    transform: translateY(-10px);
 }
 
 .review__desc-wrap:hover.review__desc-wrap::after {
@@ -655,6 +663,7 @@ a {
 .blog-item:hover {
     border-color: transparent;
     box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
+    transform: translateY(-10px);
 }
 
 .blog-item:hover .blog-item__link {
@@ -693,4 +702,97 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.62;
+}
+
+/* Download app */
+.download {
+    margin-top: 160px;
+}
+
+.download__inner {
+    position: relative;
+    padding: 100px 0;
+    background: #7264d6;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.download__content {
+    display: inline-block;
+    width: 435px;
+}
+
+.download__heading,
+.download__desc,
+.download__title {
+    color: #fff;
+}
+
+.download__title::before {
+    background: #fff;
+}
+
+.download__heading {
+    margin-top: 12px;
+}
+
+.download__desc {
+    margin-top: 18px;
+}
+
+.download__app {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.download__app-link {
+    display: block;
+    transition: 0.25s;
+}
+
+.download__app-link:hover {
+    opacity: 0.9;
+}
+
+.download-decor {
+    position: absolute;
+    animation: spinner 3s infinite linear;
+}
+
+@keyframes spinner {
+    0% {
+        rotate: 0deg;
+        scale: 1;
+    }
+
+    50% {
+        rotate: 180deg;
+        scale: 0.5;
+    }
+    100% {
+        rotate: 360deg;
+        scale: 1;
+    }
+}
+
+.download-decor:nth-of-type(1) {
+    top: 10%;
+    left: 10%;
+}
+
+.download-decor:nth-of-type(2) {
+    top: 10%;
+    right: 5%;
+}
+
+.download-decor:nth-of-type(3) {
+    bottom: 10%;
+    left: 15%;
+}
+
+.download-decor:nth-of-type(4) {
+    bottom: 10%;
+    right: 10%;
 }

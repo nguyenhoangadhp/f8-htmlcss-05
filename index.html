@@ -53,7 +53,7 @@
             <div class="container">
                 <!-- Header -->
                 <section class="header__inner">
-                    <a class="header__logo">
+                    <a href="#" class="header__logo">
                         <img
                             src="./assets/images/logo.svg"
                             alt=""
@@ -68,7 +68,12 @@
                     <nav class="header-nav">
                         <ul class="header-nav__list">
                             <li class="header-nav__item">
-                                <a href="" class="header-nav__link"> Home </a>
+                                <a
+                                    href=""
+                                    class="header-nav__link header-nav__link--active"
+                                >
+                                    Home
+                                </a>
                             </li>
                             <li class="header-nav__item">
                                 <a href="" class="header-nav__link">
@@ -99,7 +104,7 @@
                     <div class="hero__content">
                         <p class="section__title">Digital Smart Wallet</p>
                         <h1
-                            class="hero__heading animate__animated animate__pulse"
+                            class="hero__heading animate__animated animate__slow animate__bounce"
                         >
                             Digital
                             <strong class="hero__heading-strong"
@@ -140,17 +145,17 @@
                             <img
                                 src="./assets/images/hero-decor-01.svg"
                                 alt=""
-                                class="hero__media-decor-01"
+                                class="hero__media-decor-01 animate__animated animate__slideInLeft"
                             />
                             <img
                                 src="./assets/images/hero-decor-02.svg"
                                 alt=""
-                                class="hero__media-decor-02"
+                                class="hero__media-decor-02 animate__animated animate__slideInRight"
                             />
                             <img
                                 src="./assets/images/hero-decor-03.svg"
                                 alt=""
-                                class="hero__media-decor-03"
+                                class="hero__media-decor-03 animate__animated animate__slideInRight"
                             />
                         </div>
                     </div>
@@ -177,9 +182,12 @@
                                     src="./assets/images/guide-card.svg"
                                     alt=""
                                     class="guide-media-top__card"
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="bottom-center"
                                 />
-                                <div class="guide-check-top">
+                                <div class="guide-check-top" data-aos="fade-up">
                                     <img
+                                        class="guide-media-top__card"
                                         src="./assets/images/guide-check.svg"
                                         alt=""
                                         class="guide-check-top__icon"
@@ -265,7 +273,12 @@
                             </button>
                         </section>
 
-                        <div class="guide-mid-media">
+                        <div
+                            data-aos-easing="linear"
+                            data-aos-duration="1000"
+                            data-aos="zoom-in"
+                            class="guide-mid-media"
+                        >
                             <img
                                 src="./assets/images/gui-mid-card.svg"
                                 alt=""
@@ -312,12 +325,20 @@
                                 class="guide-bg-bottom"
                             />
                             <img
+                                data-aos-anchor-placement="center-bottom"
+                                data-aos="zoom-out"
+                                data-aos-easing="linear"
+                                data-aos-duration="1000"
                                 src="./assets/images/guide-dollar.svg"
                                 alt=""
                                 class="guide-media-bottom__dollar"
                             />
 
                             <img
+                                data-aos-anchor-placement="center-bottom"
+                                data-aos="zoom-out"
+                                data-aos-easing="linear"
+                                data-aos-duration="1000"
                                 src="./assets/images/pay-method.svg"
                                 alt=""
                                 class="guide-pay-method"
@@ -516,6 +537,61 @@
                         </article>
                     </div>
                 </section>
+
+                <!-- Download -->
+                <div class="download">
+                    <div class="download__inner">
+                        <div class="download__content">
+                            <div class="section__title download__title">
+                                Our App
+                            </div>
+                            <h2 class="section__heading download__heading">
+                                Download the Apps
+                            </h2>
+                            <p class="section-second__desc download__desc">
+                                Download our mobile apps and get started today
+                                with a special online bank and move faster
+                            </p>
+
+                            <div class="download__app">
+                                <a href="#!" class="download__app-link">
+                                    <img
+                                        src="./assets/icon/google-play.svg"
+                                        alt=""
+                                        class="download__app-icon"
+                                    />
+                                </a>
+                                <a href="#!" class="download__app-link">
+                                    <img
+                                        src="./assets/icon/app-store.svg"
+                                        alt=""
+                                        class="download__app-icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <img
+                            src="./assets/icon/star.svg"
+                            alt=""
+                            class="download-decor"
+                        />
+                        <img
+                            src="./assets/icon/star.svg"
+                            alt=""
+                            class="download-decor"
+                        />
+                        <img
+                            src="./assets/icon/star.svg"
+                            alt=""
+                            class="download-decor"
+                        />
+                        <img
+                            src="./assets/icon/star.svg"
+                            alt=""
+                            class="download-decor"
+                        />
+                    </div>
+                </div>
             </div>
         </div>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
