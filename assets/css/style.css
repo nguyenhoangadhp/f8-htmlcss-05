@@ -149,13 +149,13 @@ a {
 .header-nav__link:hover {
     color: var(--heading-color);
     text-shadow: 1px 0 0 var(--heading-color);
-    text-decoration: underline;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .header-nav__link--active {
     color: var(--heading-color);
     text-shadow: 1px 0 0 var(--heading-color);
-    text-decoration: underline;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .header__action {
@@ -227,6 +227,7 @@ a {
 }
 
 .hero-form__input {
+    width: 100%;
     border: none;
     outline: none;
     padding: 23px;
@@ -325,8 +326,8 @@ a {
 }
 
 .guide-media-top__card {
-    top: 12%;
-    right: 12%;
+    top: 22%;
+    right: 10%;
 }
 
 .guide-check-top {
@@ -762,7 +763,7 @@ a {
 
 .download-decor {
     position: absolute;
-    animation: spinner 3s infinite linear;
+    animation: spinner 5s infinite linear;
 }
 
 @keyframes spinner {
@@ -859,6 +860,7 @@ a {
 }
 
 .footer-form__input {
+    width: 100%;
     border: none;
     outline: none;
     border-radius: 6px;

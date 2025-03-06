@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "../../../f8-htmlcss-04"
+		},
+		{
+			"path": "../.."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "f8-project-05"
+    }
+}
